@@ -1,0 +1,35 @@
+.background{
+    background: red;
+}
+
+@media only screen and (max-width: 600px){
+    .background{
+        background: blue;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .background{
+        background: green;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .background{
+        background: yellow;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    .background{
+        font-size: 18px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse){
+    .background{
+        font-weight: bold;
+        /* Used size to detect change (more accurate, harder to tell with font weight)
+        font-size: 80px; */
+    }
+}
